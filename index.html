@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .btn.active {
+    background-color: red;
+}
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="./Logo.png" alt="" />
+            <button id="sort-by-view-button" onclick="handleSortByView()" class="btn btn-accent mx-2">Sort By View</button>
+            <button onclick="window.location.href='blog.html'" class="btn btn-accent mx-2">Blog</button>
+        </div>
+        
+    </header>
+
+    <main  class="container mx-auto mt-8 flex flex-col justify-between min-h-screen">
+        <div>
+        <div class="text-center my-8 justify-between">
+            <button id="all-button" onclick="handleShowAll()" class="btn btn-accent mx-2">All</button>
+            <button id="music-button" onclick="handleMusic()" class="btn btn-accent mx-2">Music</button>
+            <button id="comedy-button" onclick="handleComedy()" class="btn btn-accent mx-2">Comedy</button>
+            <button id="drawing-button" onclick="handleDrawing()" class="btn btn-accent mx-2">Drawing</button>
+        </div>
+
+        <section class="flex-grow">
+            <div id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+        </section>
+        </div>
+    </main>
+    <footer class="bg-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            &copy; 2023 Youtube Assignment. All Rights Reserved.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

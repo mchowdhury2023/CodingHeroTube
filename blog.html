@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 p-10">
+
+    <button onclick="window.location.href='index.html'" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-10">Back</button>
+
+    <div class="grid grid-cols-1 gap-6">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-2">Scope of var, let, and const</h2>
+            <p class="text-gray-700 text-lg">
+                The scope of a variable defines the region of your code where it’s accessible.
+                <br>
+                <br>
+                <strong>var:</strong> It is function scoped, meaning it’s visible throughout the function it is defined in, or global scope if defined outside any function.
+                <br>
+                <strong>let:</strong> It is block scoped, meaning it’s visible only within the closest {} block (function, if-else block, loop, etc.).
+                <br>
+                <strong>const:</strong> Similar to 'let', 'const' is block scoped. The difference is that the value assigned to 'const' can't be changed after it is assigned.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-2">Use Cases of null and undefined</h2>
+            <p class="text-gray-700 text-lg">
+                <strong>null:</strong> It is an assignment value. It can be assigned to a variable as a representation of no value or no object.
+                <br>
+                <strong>undefined:</strong> It is a type of variable that is not assigned any value. Variables that are declared but not initialized are of type 'undefined'.
+                <br>
+                <br>
+                <strong>Use Cases:</strong>
+                <br>
+                - Use 'null' when you want to intentionally represent the absence of any object or value.
+                <br>
+                - 'undefined' typically represents a variable that has been declared but not yet assigned a value.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-2">What do you mean by REST API?</h2>
+            <p class="text-gray-700 text-lg">
+                REST (Representational State Transfer) API (Application Programming Interface) is a set of web services that allow for the interaction between computer systems on the internet. It enables the interacting systems to communicate with each other by defining a set of rules and conventions. The interaction is stateless, meaning every HTTP request happens independently.
+                <br>
+                <br>
+                RESTful APIs are built using standard HTTP methods, which include GET, POST, PUT, DELETE, etc., and they are used to perform operations on resources, which are any kind of data, object, or service that can be accessed by the client.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
